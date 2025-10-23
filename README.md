@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="images/logo.png" alt="GreenLife Logo" width="120" height="120">
+**🌿 GreenLife Wellness Center**
 
 **Holistic Wellness Center in Colombo, Sri Lanka**
 
@@ -186,7 +186,6 @@ GreenLife/
 │   ├── delete_*.php          # Delete operations
 │   └── ...                   # Other backend scripts
 ├── 📁 images/                 # Media assets
-│   ├── logo.png              # Company logo
 │   ├── favicon.ico           # Website icon
 │   ├── services/             # Service images
 │   ├── articles/             # Article images
@@ -296,23 +295,31 @@ GreenLife/
 
 ---
 
-## 📱 Screenshots
+## 📱 Application Features
 
-### 🏠 Homepage
-![Homepage](images/hero-image.jpg)
-*Welcome to GreenLife - Your holistic wellness journey begins here*
+### 🏠 **Homepage**
+- **Hero Section**: Welcoming introduction with call-to-action buttons
+- **Service Overview**: Featured wellness programs and self-help tools
+- **Testimonials**: Client success stories and experiences
+- **Daily Tips**: Rotating wellness tips and mindfulness practices
 
-### 👨‍💼 Admin Dashboard
-![Admin Dashboard](images/admin.jpg)
-*Comprehensive management interface for system administrators*
+### 👨‍💼 **Admin Dashboard**
+- **User Management**: Complete control over client and therapist accounts
+- **Service Management**: Add, edit, and manage wellness services
+- **Resource Management**: Curate articles, videos, and health tips
+- **Analytics**: System statistics and appointment tracking
 
-### 👨‍⚕️ Therapist Dashboard
-![Therapist Dashboard](images/therapist.jpg)
-*Professional interface for wellness therapists*
+### 👨‍⚕️ **Therapist Dashboard**
+- **Client Portfolio**: Manage assigned clients and their progress
+- **Appointment Scheduling**: Flexible booking and session management
+- **Progress Tracking**: Monitor client improvements and goals
+- **Inquiry Management**: Respond to client questions and concerns
 
-### 👤 Client Dashboard
-![Client Dashboard](images/client.jpg)
-*Personal wellness tracking and appointment management*
+### 👤 **Client Dashboard**
+- **Personal Profile**: Manage wellness goals and preferences
+- **Appointment Booking**: Easy scheduling with preferred therapists
+- **Progress Monitoring**: Track personal wellness journey
+- **Resource Access**: Browse articles, videos, and health tips
 
 ---
 
@@ -437,17 +444,17 @@ SOFTWARE.
 - **Location**: 123 Green Road, Colombo, Sri Lanka
 - **Phone**: +94 11 234 5678
 - **Email**: wellness@greenlife.lk
-- **Website**: [www.greenlife.lk](https://www.greenlife.lk)
+- **Website**: www.greenlife.lk
 
 ### **Social Media**
-- **Facebook**: [GreenLife Wellness Center](https://www.facebook.com/GreenLifeWellnessCenter)
-- **Instagram**: [@GreenLifeWellnessCenter](https://www.instagram.com/GreenLifeWellnessCenter)
-- **Twitter**: [@GreenLifeWellness](https://twitter.com/GreenLifeWellness)
+- **Facebook**: GreenLife Wellness Center
+- **Instagram**: @GreenLifeWellnessCenter
+- **Twitter**: @GreenLifeWellness
 
 ### **Development Team**
-- **Lead Developer**: [Your Name](mailto:developer@greenlife.lk)
-- **UI/UX Designer**: [Designer Name](mailto:designer@greenlife.lk)
-- **Project Manager**: [PM Name](mailto:pm@greenlife.lk)
+- **Full-Stack Developer**: **MNSBaanu**
+- **Project**: Complete end-to-end development
+- **Technologies**: PHP, MySQL, HTML5, CSS3, JavaScript
 
 ---
 
@@ -457,6 +464,10 @@ SOFTWARE.
 
 *Embrace your well-being with us*
 
-<img src="images/logo.png" alt="GreenLife Logo" width="80" height="80">
+---
+
+**Developed with ❤️ by MNSBaanu**
+
+*Full-Stack Web Developer*
 
 </div>
