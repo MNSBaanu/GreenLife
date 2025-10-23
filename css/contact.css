@@ -1,0 +1,668 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #f7fafc;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #1e4d37;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Header Styles */
+.header {
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  padding: 1rem 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.brand:hover{
+    color:#217968;
+}
+
+.logo-img {
+  width: 40px;
+  margin-right: 0.5rem;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  min-width: 200px;
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: #2d3748;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Trebuchet MS', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #b2ebf2;
+  color: #004f5c;
+  border-radius: 0.375rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown:hover .dropdown-toggle i {
+  transform: rotate(180deg);
+}
+
+/* Base styles for the dropdown icon */
+.dropdown-icon {
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the icon when the dropdown is active */
+.dropdown.open .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Show the dropdown menu when active */
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+
+.dropdown-toggle {
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dropdown-toggle i {
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav a:hover,
+.dropdown-toggle:hover,
+.login:hover {
+  background-color: #c5d8d1;
+}
+
+nav .login {
+  background-color: #006978 !important; /* Dark teal background */
+  color: #dde0cd !important;            /* White text */
+  font-weight: 600;
+  border-radius: 9999px;                /* Pill-shaped button */
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .login:hover {
+  background-color: #004f5c !important; /* Slightly darker on hover */
+  transform: scale(1.05);               /* Subtle scaling effect */
+}
+
+/* Contact Hero */
+.contact-hero {
+    background: linear-gradient(rgba(42, 42, 43, 0.8), rgba(36, 36, 37, 0.8)), 
+                url('../images/contact-hero.jpg') center/cover no-repeat;
+    color: rgb(240, 235, 235);
+    padding: 6rem 1rem;
+    text-align: center;
+    margin: 40px;
+    border-radius: 15px;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #dfe6c4;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.contact-hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Quick Contact Bar */
+.quick-contact-bar {
+    background-color: #004f5c;
+    color: white;
+    padding: 1rem 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius:15px;
+}
+
+.quick-contact-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.quick-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.quick-contact-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.quick-contact-item i {
+    font-size: 1.2rem;
+}
+
+/* Contact Content */
+.contact-content {
+    padding: 4rem 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-info h2,
+.contact-form-wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #1e4d37;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.contact-info h2::after,
+.contact-form-wrapper h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #217968;
+}
+
+.info-card {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.info-card i {
+    font-size: 1.5rem;
+    color: #217968;
+    margin-top: 0.3rem;
+}
+
+.info-card h3 {
+    color: #1e4d37;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.info-card p,
+.info-card a {
+    color: #305a43;
+    line-height: 1.6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info-card a:hover {
+    color: #217968;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #1e4d37;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #a9d3bd;
+    border-radius: 8px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #217968;
+    box-shadow: 0 0 0 3px rgba(33, 121, 104, 0.2);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #217968;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #1b4545;
+    transform: translateY(-2px);
+}
+
+/* Map Section */
+.small-map {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.small-map h3 {
+  color: #1e4d37;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.small-map .map-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove the separate map-section since we've moved it */
+.map-section {
+  display: none;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 4rem 0;
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: #1e4d37;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: left;
+    background-color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e4d37;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f8fbfa;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f8fbfa;
+}
+
+.faq-answer.active {
+    max-height: 500px;
+    padding: 0 1.5rem;
+}
+
+.faq-answer p {
+    padding: 1.5rem 0;
+    color: #305a43;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background-color: #ffffff;
+    padding: 3rem 1rem 2rem;
+    color: #305a43;
+    font-size: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .footer-column h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #1e4d37;
+        border-bottom: 2px solid #8db5a0;
+        display: inline-block;
+        padding-bottom: 0.3rem;
+        text-align: center;
+    }
+
+    .footer-column a{
+      text-decoration: none;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+        .footer-column ul li {
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+            .footer-column ul li a {
+                color: #305a43;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+                .footer-column ul li a:hover {
+                    color: #88a49e;
+                }
+
+    .footer-column p {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .footer-column a{
+        color:#1e4d37;
+    }
+    
+    .footer-column a:hover {
+        color: #88a49e;
+    }
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #a9d3bd;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #2e4c37;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-link i {
+    font-size: 1.5rem;
+    color: #217968;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover i {
+    color: #88a49e;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #a9d3bd;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #2e4c37;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        margin-bottom: 3rem;
+    }
+    
+    .quick-contact-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quick-contact-item {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        width: 100%;
+    }
+    
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .contact-info h2,
+    .contact-form-wrapper h2,
+    .map-section h2,
+    .faq-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-hero {
+        padding: 4rem 1rem;
+    }
+    
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+    
+    .info-card {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+  
+}

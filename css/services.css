@@ -1,0 +1,674 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #f7fafc; /* Light background */
+  color: #2d3748; /* Dark gray text */
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #1e4d37;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.container h1{
+    font-size: 50px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  padding: 1rem 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.brand:hover{
+    color:#217968;
+}
+
+.logo-img {
+  width: 40px;
+  margin-right: 0.5rem;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  min-width: 200px;
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: #2d3748;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Trebuchet MS', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #b2ebf2;
+  color: #004f5c;
+  border-radius: 0.375rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown:hover .dropdown-toggle i {
+  transform: rotate(180deg);
+}
+
+/* Base styles for the dropdown icon */
+.dropdown-icon {
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the icon when the dropdown is active */
+.dropdown.open .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Show the dropdown menu when active */
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+
+.dropdown-toggle {
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dropdown-toggle i {
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav a:hover,
+.dropdown-toggle:hover,
+.login:hover {
+  background-color: #c5d8d1;
+}
+
+nav .login {
+  background-color: #006978 !important; /* Dark teal background */
+  color: #dde0cd !important;            /* White text */
+  font-weight: 600;
+  border-radius: 9999px;                /* Pill-shaped button */
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .login:hover {
+  background-color: #004f5c !important; /* Slightly darker on hover */
+  transform: scale(1.05);               /* Subtle scaling effect */
+}
+
+/* Offerings */
+
+.offerings {
+  padding: 4rem 1rem;
+  background-color: #f0fdf7;
+  text-align: center;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.offerings-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.offerings-header h2 {
+  font-size: 2.5rem;
+  color: #1e4d37;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.offerings-header h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #217968;
+  border-radius: 2px;
+}
+
+.offerings-header .subtitle {
+  font-size: 1.1rem;
+  color: #5c8e7f;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.offerings h2 {
+  font-size: 2.5rem;
+  color: #244b35;
+  margin-bottom: 1rem;
+}
+
+.offerings .subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  color: #5c8e7f;
+}
+
+.offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.offering-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  border: 1px solid #e0e6ed;
+}
+
+.offering-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.offering-card.expanded:after {
+    content: "▲";
+}
+
+.service-content {
+  padding: 1.5rem;
+}
+
+.service-content h3 {
+  color: #1e4d37;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+
+.service-summary {
+  color: #4a5568;
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.service-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.offering-card.expanded .service-details {
+  max-height: 500px;
+}
+
+.service-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0;
+}
+
+.service-benefits li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+  text-align: left;
+}
+
+.service-benefits li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #217968;
+}
+
+.btn-book {
+  display: block;
+  width: 100%;
+  background: #217968;
+  color: white;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-book:hover {
+  background: #1a5e50;
+  transform: translateY(-2px);
+}
+
+.card-category {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255,255,255,0.9);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #217968;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.offering-card:hover {
+    box-shadow: 0 5px 15px rgba(33, 121, 104, 0.2);
+}
+
+.offering-card:hover:after {
+    transform: translateX(-50%) scale(1.2);
+}
+
+.offering-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.offering-card:hover img {
+    transform: scale(1.03);
+}
+
+.offering-card h3 {
+  color: #1e4d37;
+  margin-bottom: 0.5rem;
+}
+
+.offering-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+
+/* Unique hover background colors for each card */
+.card-ayurveda { background-color: #f5efe8; }
+.card-yoga { background-color: #f0f5f2; }
+.card-nutrition { background-color: #f0f8f3; }
+.card-physiotherapy { background-color: #f8f0ed; }
+.card-massage { background-color: #f0f5f8; }
+.card-aroma { background-color: #f8f8e8; }
+
+/* ===== Footer ===== */
+.footer {
+  background-color: #ffffff;
+  padding: 3rem 1rem 2rem;
+  color: #305a43;
+  font-size: 1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #1e4d37;
+  border-bottom: 2px solid #8db5a0;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #1e4d37;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #88a49e;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.footer-column p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #a9d3bd;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #2e4c37;
+}
+
+.btn-small {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #4e8c75;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.btn-book {
+  display: inline-block;
+  background: #217968;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.btn-book:hover {
+  background: #1b4545;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Self-help Tools Section */
+.self-help {
+  background-color: #e8f5f1;
+  padding: 4rem 1rem;
+  margin-top: 3rem;
+}
+
+.self-help h2 {
+  text-align: center;
+  color: #1e4d37;
+  margin-bottom: 2rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tool-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+}
+
+.tool-card h3 {
+  color: #1e4d37;
+  margin-bottom: 1rem;
+}
+
+.tool-card p {
+  margin-bottom: 1rem;
+  color: #305a43;
+}
+
+.tool-link {
+  display: inline-flex;
+  align-items: center;
+  color: #217968;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.tool-link i {
+  margin-left: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.tool-link:hover {
+  color: #1b4545;
+}
+
+.tool-link:hover i {
+  transform: translateX(3px);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 18px;
+  gap: 10px; /* space between icon and text */
+  transition: color 0.3s ease;
+}
+
+.social-link i {
+  font-size: 35px;
+  color: #217968; /* teal color for icons */
+}
+
+/* Hover effect */
+.social-link:hover {
+  color: #1abc9c;
+}
+
+.social-link:hover i {
+  color: #88a49e;
+}
+
+/* Search Bar */
+.search-container {
+  max-width: 500px;
+  margin: 2rem auto 3rem;
+}
+
+.search-container input {
+  padding: 1rem 1.5rem;
+  border: 2px solid #d1e7dd;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  background: white;
+}
+
+.search-container input:focus {
+  border-color: #217968;
+  box-shadow: 0 0 0 3px rgba(33, 121, 104, 0.2);
+}
+
+.search-container i {
+  color: #217968;
+}
+
+/* Expand toggle button */
+.expand-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #217968;
+  font-weight: 600;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+
+.expand-toggle i {
+  margin-left: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.offering-card.expanded .expand-toggle i {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .dropdown-menu a {
+    padding: 0.5rem 1rem;
+  }
+      .offerings-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+    .offering-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .offerings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .offerings-header h2 {
+    font-size: 2rem;
+  }
+}

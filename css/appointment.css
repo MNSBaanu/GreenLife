@@ -1,0 +1,360 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #f7fafc; /* Light background */
+  color: #2d3748; /* Dark gray text */
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #1e4d37;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.container h1{
+    font-size: 50px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  padding: 1rem 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.brand:hover{
+    color:#217968;
+}
+
+.logo-img {
+  width: 40px;
+  margin-right: 0.5rem;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  min-width: 200px;
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: #2d3748;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Trebuchet MS', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #b2ebf2;
+  color: #004f5c;
+  border-radius: 0.375rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown:hover .dropdown-toggle i {
+  transform: rotate(180deg);
+}
+
+/* Base styles for the dropdown icon */
+.dropdown-icon {
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the icon when the dropdown is active */
+.dropdown.open .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Show the dropdown menu when active */
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+
+.dropdown-toggle {
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dropdown-toggle i {
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav a:hover,
+.dropdown-toggle:hover,
+.login:hover {
+  background-color: #c5d8d1;
+}
+
+nav .login {
+  background-color: #006978 !important; /* Dark teal background */
+  color: #dde0cd !important;            /* White text */
+  font-weight: 600;
+  border-radius: 9999px;                /* Pill-shaped button */
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .login:hover {
+  background-color: #004f5c !important; /* Slightly darker on hover */
+  transform: scale(1.05);               /* Subtle scaling effect */
+}
+
+/* Footer */
+.footer {
+    background-color: #ffffff;
+    padding: 3rem 1rem 2rem;
+    color: #305a43;
+    font-size: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+    .footer-column h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #1e4d37;
+        border-bottom: 2px solid #8db5a0;
+        display: inline-block;
+        padding-bottom: 0.3rem;
+    }
+
+    .footer-column a{
+      text-decoration: none;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-column ul li {
+            margin-bottom: 0.5rem;
+
+        }
+
+            .footer-column ul li a {
+                color: #305a43;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+                .footer-column ul li a:hover {
+                    color: #88a49e;
+                }
+
+    .footer-column p {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+
+    .footer-column a{
+        color:#1e4d37;
+    }
+    
+    .footer-column a:hover {
+        color: #88a49e;
+    }
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #a9d3bd;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #2e4c37;
+}
+
+/* Appointment Section */
+.appointment {
+    background-color: #f3fbf7;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+    .appointment h2 {
+        color: #244b35;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+.appointment-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+    .appointment-form .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .appointment-form input,
+    .appointment-form select {
+        flex: 1 1 45%;
+        padding: 0.8rem;
+        border-radius: 8px;
+        border: 1px solid #aacbbf;
+        font-size: 1rem;
+    }
+
+    .appointment-form button.btn {
+        background-color: #66a88f;
+        color: white;
+        padding: 0.8rem 2rem;
+        border: none;
+        border-radius: 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .appointment-form button.btn:hover {
+            background-color: #4e8c75;
+        }
+
+        
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 18px;
+  gap: 10px; /* space between icon and text */
+  transition: color 0.3s ease;
+}
+
+.social-link i {
+  font-size: 35px;
+  color: #217968; /* teal color for icons */
+}
+
+/* Hover effect */
+.social-link:hover {
+  color: #1abc9c;
+}
+
+.social-link:hover i {
+  color: #88a49e;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .dropdown-menu a {
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\xampp\\htdocs\\greenlife\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\html\\admin_dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:html\\admin_dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\html\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:html\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\php\\addservice.php||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php\\addservice.php||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\php\\register.php||{3D2461EC-8045-4AA9-ABFB-812292AE795D}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php\\register.php||{3D2461EC-8045-4AA9-ABFB-812292AE795D}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\html\\client_dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:html\\client_dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\html\\edit_profile.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:html\\edit_profile.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\html\\edit_therapist_profile.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:html\\edit_therapist_profile.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\html\\edit_admin_profile.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:html\\edit_admin_profile.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\greenlife_wellness.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:greenlife_wellness.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\html\\therapist_dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:html\\therapist_dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\css\\add_service.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\add_service.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\html\\add_service.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:html\\add_service.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\php\\dbconnect.php||{3D2461EC-8045-4AA9-ABFB-812292AE795D}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php\\dbconnect.php||{3D2461EC-8045-4AA9-ABFB-812292AE795D}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\greenlife\\php\\services.php||{3D2461EC-8045-4AA9-ABFB-812292AE795D}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php\\services.php||{3D2461EC-8045-4AA9-ABFB-812292AE795D}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "addservice.php",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\php\\addservice.php",
+              "RelativeDocumentMoniker": "php\\addservice.php",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\php\\addservice.php",
+              "RelativeToolTip": "php\\addservice.php",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAwwGwAAAAhAAAAAAAAAA==",
+              "Icon": "89320d42-7831-4f47-839a-c227d3a60919.000001|",
+              "WhenOpened": "2025-06-19T17:44:29.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "register.php",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\php\\register.php",
+              "RelativeDocumentMoniker": "php\\register.php",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\php\\register.php",
+              "RelativeToolTip": "php\\register.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "89320d42-7831-4f47-839a-c227d3a60919.000001|",
+              "WhenOpened": "2025-06-19T17:35:59.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "edit_therapist_profile.html",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\html\\edit_therapist_profile.html",
+              "RelativeDocumentMoniker": "html\\edit_therapist_profile.html",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\html\\edit_therapist_profile.html",
+              "RelativeToolTip": "html\\edit_therapist_profile.html",
+              "ViewState": "AgIAAOkAAAAAAAAAAAAwwAoBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-19T17:26:48.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "edit_admin_profile.html",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\html\\edit_admin_profile.html",
+              "RelativeDocumentMoniker": "html\\edit_admin_profile.html",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\html\\edit_admin_profile.html",
+              "RelativeToolTip": "html\\edit_admin_profile.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-19T17:26:00.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "therapist_dashboard.html",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\html\\therapist_dashboard.html",
+              "RelativeDocumentMoniker": "html\\therapist_dashboard.html",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\html\\therapist_dashboard.html",
+              "RelativeToolTip": "html\\therapist_dashboard.html",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAACAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-19T15:30:05.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\html\\index.html",
+              "RelativeDocumentMoniker": "html\\index.html",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\html\\index.html",
+              "RelativeToolTip": "html\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-19T15:28:30.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "admin_dashboard.html",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\html\\admin_dashboard.html",
+              "RelativeDocumentMoniker": "html\\admin_dashboard.html",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\html\\admin_dashboard.html",
+              "RelativeToolTip": "html\\admin_dashboard.html",
+              "ViewState": "AgIAAAADAAAAAAAAAAAAABcDAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-19T15:28:15.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "edit_profile.html",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\html\\edit_profile.html",
+              "RelativeDocumentMoniker": "html\\edit_profile.html",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\html\\edit_profile.html",
+              "RelativeToolTip": "html\\edit_profile.html",
+              "ViewState": "AgIAALcAAAAAAAAAAAAwwCMBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-19T17:27:13.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "client_dashboard.html",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\html\\client_dashboard.html",
+              "RelativeDocumentMoniker": "html\\client_dashboard.html",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\html\\client_dashboard.html",
+              "RelativeToolTip": "html\\client_dashboard.html",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-19T17:28:51.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "dbconnect.php",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\php\\dbconnect.php",
+              "RelativeDocumentMoniker": "php\\dbconnect.php",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\php\\dbconnect.php",
+              "RelativeToolTip": "php\\dbconnect.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "89320d42-7831-4f47-839a-c227d3a60919.000001|",
+              "WhenOpened": "2025-06-19T13:02:19.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "greenlife_wellness.sql",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\greenlife_wellness.sql",
+              "RelativeDocumentMoniker": "greenlife_wellness.sql",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\greenlife_wellness.sql",
+              "RelativeToolTip": "greenlife_wellness.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-06-19T12:56:26.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "services.php",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\php\\services.php",
+              "RelativeDocumentMoniker": "php\\services.php",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\php\\services.php",
+              "RelativeToolTip": "php\\services.php",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAEAAAAAAAAAA==",
+              "Icon": "89320d42-7831-4f47-839a-c227d3a60919.000001|",
+              "WhenOpened": "2025-06-19T12:53:06.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "add_service.css",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\css\\add_service.css",
+              "RelativeDocumentMoniker": "css\\add_service.css",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\css\\add_service.css",
+              "RelativeToolTip": "css\\add_service.css",
+              "ViewState": "AgIAAFcBAAAAAAAAAAAAwGQBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-19T12:00:50.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "add_service.html",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\greenlife\\html\\add_service.html",
+              "RelativeDocumentMoniker": "html\\add_service.html",
+              "ToolTip": "C:\\xampp\\htdocs\\greenlife\\html\\add_service.html",
+              "RelativeToolTip": "html\\add_service.html",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAwwNUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-19T11:59:14.084Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | GreenLife Wellness Center</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="brand">
+                <img src="../images/logo.png" alt="GreenLife Logo" class="logo-img">
+                <span>GreenLife</span>
+            </div>
+            <nav class="nav">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about.html">About</a>
+                <a href="../html/contact.html">Contact</a>
+
+                <div class="dropdown">
+                    <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Explore <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="../php/services.php">Services</a>
+                        <a href="../php/therapists.php">Therapists</a>
+                        <a href="../php/resources.php">Resources</a>
+                    </div>
+                </div>
+
+                <a href="../html/login.html" class="login">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <main class="contact-container">
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p>We're here to help you on your wellness journey.<br>Reach out to us anytime.</p>
+            </div>
+        </section>
+
+        <!-- Quick Contact Bar -->
+        <section class="quick-contact-bar">
+            <div class="container">
+                <div class="quick-contact-items">
+                    <a href="tel:+94112345678" class="quick-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Call Us</span>
+                    </a>
+                    <a href="mailto:wellness@greenlife.lk" class="quick-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Us</span>
+                    </a>
+                    <a href="https://wa.me/94112345678" class="quick-contact-item" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <div class="quick-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Sat: 8AM - 8PM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Contact Content -->
+<section class="contact-content">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Our Information</h2>
+        <div class="info-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h3>Location</h3>
+            <p>123 Green Road, Colombo, Sri Lanka</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h3>Phone</h3>
+            <p><a href="tel:+94112345678">+94 11 234 5678</a></p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>Email</h3>
+            <p><a href="mailto:wellness@greenlife.lk">wellness@greenlife.lk</a></p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h3>Working Hours</h3>
+            <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
+            <p>Sunday: 10:00 AM - 4:00 PM</p>
+          </div>
+        </div>
+        
+        <!-- Moved Map Here -->
+        <div class="small-map">
+          <h3>Our Location</h3>
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9196274830194!2d79.86124311532798!3d6.927078895028826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25935a5341dd9%3A0x8dcd86b7e8c9b13d!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1685716824938!5m2!1sen!2sus" 
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <h2>Send Us a Message</h2>
+                        <form class="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="general">General Inquiry</option>
+                                    <option value="appointment">Appointment</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" placeholder="How can we help you?" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What are your opening hours?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We're open Monday to Saturday from 8:00 AM to 8:00 PM, and on Sundays from 10:00 AM to 4:00 PM.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How do I book an appointment?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can book an appointment by calling us, using our online booking system, or by visiting our center in person.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What payment methods do you accept?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We accept cash, credit/debit cards, and mobile payments. Health insurance may cover some of our services.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you offer emergency services?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>While we're not an emergency facility, we do accommodate urgent cases when possible. Please call ahead.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What should I bring to my first appointment?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Please bring any medical records, a list of medications, and wear comfortable clothing suitable for movement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../php/services.php">Services</a></li>
+                    <li><a href="../php/therapists.php">Therapists</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>123 Green Road, Colombo, Sri Lanka</p>
+                <p>+94 11 234 5678</p>
+                <p><a href="mailto:wellness@greenlife.lk">wellness@greenlife.lk</a></p>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/GreenLifeWellnessCenter" class="social-link" target="_blank">
+                    <i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/GreenLifeWellnessCenter" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/GreenLifeWellness" class="social-link" target="_blank">
+                    <i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 GreenLife Wellness Center. Embrace your well-being </p>
+        </div>
+    </footer>
+
+    <script>
+// FAQ Accordion Functionality
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const answer = button.nextElementSibling;
+        const isOpen = button.classList.contains('active');
+
+        // Close all other FAQ items
+        document.querySelectorAll('.faq-item').forEach(item => {
+            if (item !== faqItem) {
+                item.querySelector('.faq-question').classList.remove('active');
+                item.querySelector('.faq-answer').classList.remove('active');
+            }
+        });
+
+        // Toggle current item
+        if (!isOpen) {
+            button.classList.add('active');
+            answer.classList.add('active');
+        } else {
+            button.classList.remove('active');
+            answer.classList.remove('active');
+        }
+    });
+});
+
+// Form submission
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message! We will get back to you soon.');
+    this.reset();
+});
+
+// Dropdown functionality
+const dropdown = document.querySelector('.dropdown');
+const toggleButton = dropdown.querySelector('.dropdown-toggle');
+const menu = dropdown.querySelector('.dropdown-menu');
+const icon = toggleButton.querySelector('i');
+
+let isOpen = false;
+
+toggleButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+    isOpen = !isOpen;
+    menu.style.opacity = isOpen ? '1' : '0';
+    menu.style.visibility = isOpen ? 'visible' : 'hidden';
+    icon.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+});
+
+document.addEventListener('click', () => {
+    if (isOpen) {
+        isOpen = false;
+        menu.style.opacity = '0';
+        menu.style.visibility = 'hidden';
+        icon.style.transform = 'rotate(0deg)';
+    }
+});
+
+dropdown.addEventListener('mouseenter', () => {
+    menu.style.opacity = '1';
+    menu.style.visibility = 'visible';
+    icon.style.transform = 'rotate(180deg)';
+});
+
+dropdown.addEventListener('mouseleave', () => {
+    if (!isOpen) {
+        menu.style.opacity = '0';
+        menu.style.visibility = 'hidden';
+        icon.style.transform = 'rotate(0deg)';
+    }
+});
+    </script>
+</body>
+</html>

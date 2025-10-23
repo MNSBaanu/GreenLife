@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login & Register - GreenLife Wellness Center</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="brand">
+                <img src="../images/logo.png" alt="GreenLife Logo" class="logo-img">
+                <span>GreenLife</span>
+            </div>
+            <nav class="nav">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/about.html">About</a>
+                <a href="../html/contact.html">Contact</a>
+
+                <div class="dropdown">
+                    <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Explore <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="../php/services.php">Services</a>
+                        <a href="../php/therapists.php">Therapists</a>
+                        <a href="../php/resources.php">Resources</a>
+                    </div>
+                </div>
+
+                <a href="../html/login.html" class="login">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="auth-welcome">
+        <div class="container">
+            <h2>Welcome to GreenLife Wellness Center</h2>
+            <p>Sign in to access your personalized wellness dashboard or create a new account</p>
+        </div>
+    </section>
+
+    <!-- Auth Container -->
+<section class="auth-container container">
+    <div class="tabs">
+        <button id="login-tab" class="tab active">Login</button>
+        <button id="register-tab" class="tab">Register</button>
+    </div>
+
+     <!-- Login Form -->
+    <form id="login-form" class="auth-form active" action="../php/login.php" method="POST">
+        <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="password" placeholder="Enter your password" required />
+        </div>
+        
+        <?php if (isset($_SESSION['login_error'])): ?>
+            <div class="error-message"><?php echo $_SESSION['login_error']; ?></div>
+            <?php unset($_SESSION['login_error']); ?>
+        <?php endif; ?>
+        
+        <button type="submit" class="btn-submit">Login</button>
+        
+        <div class="form-footer">
+            <a href="#">Forgot password?</a>
+        </div>
+    </form>
+
+    <!-- Register Form -->
+    <form id="register-form" class="auth-form" action="../php/register.php" method="POST">
+        <div class="form-group">
+            <label for="register-name">Full Name</label>
+            <input type="text" id="register-name" name="fullname" placeholder="Enter your full name" required />
+        </div>
+        
+        <div class="form-group">
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" name="email" placeholder="Enter your email" required />
+        </div>
+        
+        <div class="form-group">
+            <label for="register-password">Password</label>
+            <input type="password" id="register-password" name="password" placeholder="Create a password (min 6 characters)" required minlength="6" />
+        </div>
+        
+        <div class="form-group">
+            <label for="register-confirm-password">Confirm Password</label>
+            <input type="password" id="register-confirm-password" name="confirmPassword" placeholder="Confirm password" required minlength="6" />
+        </div>
+        
+        <div class="form-group">
+            <label for="register-role">Register As</label>
+            <select id="register-role" name="role" required>
+                <option value="">Select your role</option>
+                <option value="client">Client</option>
+                <option value="therapist">Therapist (requires verification)</option>
+            </select>
+        </div>
+        
+        <?php if (isset($_SESSION['register_error'])): ?>
+            <div class="error-message"><?php echo $_SESSION['register_error']; ?></div>
+            <?php unset($_SESSION['register_error']); ?>
+        <?php endif; ?>
+        
+        <?php if (isset($_SESSION['register_success'])): ?>
+            <div class="success-message"><?php echo $_SESSION['register_success']; ?></div>
+            <?php unset($_SESSION['register_success']); ?>
+        <?php endif; ?>
+        
+        <button type="submit" class="btn-submit">Create Account</button>
+        
+        <div class="form-footer">
+            Already have an account? <a href="login.html" id="switch-to-login">Sign in</a>
+        </div>
+    </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../php/services.php">Services</a></li>
+                    <li><a href="../php/therapists.php">Therapists</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>123 Green Road, Colombo, Sri Lanka</p>
+                <p>+94 11 234 5678</p>
+                <p><a href="mailto:wellness@greenlife.lk">wellness@greenlife.lk</a></p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/GreenLifeWellnessCenter" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/GreenLifeWellnessCenter" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/GreenLifeWellness" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 GreenLife Wellness Center. Embrace your well-being</p>
+        </div>
+    </footer>
+
+    <script>
+    // Dropdown functionality
+    const dropdown = document.querySelector('.dropdown');
+    const toggleButton = dropdown.querySelector('.dropdown-toggle');
+    const menu = dropdown.querySelector('.dropdown-menu');
+    const icon = toggleButton.querySelector('i');
+
+    let isOpen = false;
+    
+    toggleButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        isOpen = !isOpen;
+        menu.style.opacity = isOpen ? '1' : '0';
+        menu.style.visibility = isOpen ? 'visible' : 'hidden';
+        icon.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+    });
+
+    document.addEventListener('click', () => {
+        isOpen = false;
+        menu.style.opacity = '0';
+        menu.style.visibility = 'hidden';
+        icon.style.transform = 'rotate(0deg)';
+    });
+
+    dropdown.addEventListener('mouseenter', () => {
+        menu.style.opacity = '1';
+        menu.style.visibility = 'visible';
+        icon.style.transform = 'rotate(180deg)';
+    });
+
+    dropdown.addEventListener('mouseleave', () => {
+        if (!isOpen) {
+            menu.style.opacity = '0';
+            menu.style.visibility = 'hidden';
+            icon.style.transform = 'rotate(0deg)';
+        }
+    });
+
+    // Tab Switching
+    const loginTab = document.getElementById("login-tab");
+    const registerTab = document.getElementById("register-tab");
+    const loginForm = document.getElementById("login-form");
+    const registerForm = document.getElementById("register-form");
+
+    function showLogin() {
+        loginTab.classList.add("active");
+        registerTab.classList.remove("active");
+        loginForm.classList.add("active");
+        registerForm.classList.remove("active");
+        window.history.replaceState(null, null, window.location.pathname);
+    }
+
+    function showRegister() {
+        registerTab.classList.add("active");
+        loginTab.classList.remove("active");
+        registerForm.classList.add("active");
+        loginForm.classList.remove("active");
+        window.history.replaceState(null, null, window.location.pathname + '?tab=register');
+    }
+
+    loginTab.addEventListener("click", showLogin);
+    registerTab.addEventListener("click", showRegister);
+
+    // Handle "Already have an account? Sign in" link
+    const switchToLogin = document.getElementById("switch-to-login");
+    if (switchToLogin) {
+        switchToLogin.addEventListener("click", function(e) {
+            e.preventDefault();
+            showLogin();
+        });
+    }
+
+    // Check URL fragment or query param
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("tab") === "register") {
+        showRegister();
+    }
+
+</script>
+</body>
+</html>
