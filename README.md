@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![GreenLife Logo](images/logo.png)
+<img src="images/logo.png" alt="GreenLife Logo" width="120" height="120">
 
 **Holistic Wellness Center in Colombo, Sri Lanka**
 
@@ -457,6 +457,6 @@ SOFTWARE.
 
 *Embrace your well-being with us*
 
-![Footer Logo](images/logo.png)
+<img src="images/logo.png" alt="GreenLife Logo" width="80" height="80">
 
 </div>
