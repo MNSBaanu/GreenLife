@@ -6,20 +6,6 @@ A web-based wellness management system for a holistic health center in Colombo, 
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Database Setup](#database-setup)
-- [Default Credentials](#default-credentials)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-
----
 
 ## Overview
 
@@ -145,11 +131,6 @@ Or use a GUI tool like phpMyAdmin — create a database named `greenlife_wellnes
 
 ---
 
-## Screenshots
-
-> Add screenshots of the dashboards and public pages here.
-
----
 
 ## Contributing
 
