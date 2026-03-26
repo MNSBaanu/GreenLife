@@ -19,9 +19,9 @@
                 <span>GreenLife</span>
             </div>
             <nav class="nav">
-                <a href="../html/index.html">Home</a>
-                <a href="../html/about.html">About</a>
-                <a href="../html/contact.html">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
 
                 <div class="dropdown">
                     <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
 
-                <a href="../html/login.php" class="login">Login</a>
+                <a href="login.php" class="login">Login</a>
             </nav>
         </div>
     </header>
@@ -66,7 +66,7 @@
         </div>
         
         <?php if (isset($_SESSION['login_error'])): ?>
-            <div class="error-message"><?php echo $_SESSION['login_error']; ?></div>
+            <div class="error-message"><?php echo htmlspecialchars($_SESSION['login_error']); ?></div>
             <?php unset($_SESSION['login_error']); ?>
         <?php endif; ?>
         
@@ -109,19 +109,19 @@
         </div>
         
         <?php if (isset($_SESSION['register_error'])): ?>
-            <div class="error-message"><?php echo $_SESSION['register_error']; ?></div>
+            <div class="error-message"><?php echo htmlspecialchars($_SESSION['register_error']); ?></div>
             <?php unset($_SESSION['register_error']); ?>
         <?php endif; ?>
         
         <?php if (isset($_SESSION['register_success'])): ?>
-            <div class="success-message"><?php echo $_SESSION['register_success']; ?></div>
+            <div class="success-message"><?php echo htmlspecialchars($_SESSION['register_success']); ?></div>
             <?php unset($_SESSION['register_success']); ?>
         <?php endif; ?>
         
         <button type="submit" class="btn-submit">Create Account</button>
         
         <div class="form-footer">
-            Already have an account? <a href="login.php" id="switch-to-login">Sign in</a>
+            Already have an account? <a href="#" id="switch-to-login">Sign in</a>
         </div>
     </form>
     </section>
@@ -132,10 +132,10 @@
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="../php/services.php">Services</a></li>
                     <li><a href="../php/therapists.php">Therapists</a></li>
-                    <li><a href="../html/contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
