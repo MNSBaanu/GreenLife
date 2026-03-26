@@ -35,14 +35,14 @@ if (isset($_POST["email"], $_POST["password"])) {
         exit();
     } else {
         $_SESSION['login_error'] = "Invalid email or password.";
-        header("Location: ../html/login.html");
+        header("Location: ../html/login.php");
         exit();
     }
 
     $stmt->close();
 } else {
     $_SESSION['login_error'] = "Please enter email and password.";
-    header("Location: ../html/login.html");
+    header("Location: ../html/login.php");
     exit();
 }
 
