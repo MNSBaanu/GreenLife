@@ -2,6 +2,9 @@
 // Database Connection Test
 // Delete this file after testing!
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 echo "<h2>Testing Database Connection</h2>";
 
 // Show server info
@@ -12,27 +15,47 @@ echo "<p><strong>Server Software:</strong> " . $_SERVER['SERVER_SOFTWARE'] . "</
 if (file_exists('php/config.php')) {
     echo "<p style='color: green;'>✓ config.php file exists</p>";
     
-    // Include and test connection
-    require_once 'php/config.php';
+    // Manually test connection with credentials
+    $host = "sql305.infinityfree.com";
+    $user = "if0_41483792";
+    $pass = "zsd6Ne19U3ScQfq";
     
-    if ($conn->connect_error) {
-        echo "<p style='color: red;'>✗ Connection failed: " . $conn->connect_error . "</p>";
-    } else {
-        echo "<p style='color: green;'>✓ Database connected successfully!</p>";
-        echo "<p><strong>Database:</strong> " . $dbname . "</p>";
+    echo "<p><strong>Attempting connection to:</strong> $host</p>";
+    echo "<p><strong>Username:</strong> $user</p>";
+    
+    // Try different database names
+    $possible_dbs = [
+        "if0_41483792_greenlife_wellness",
+        "if0_41483792_greenlife",
+        "if0_41483792_wellness",
+        "if0_41483792_db"
+    ];
+    
+    foreach ($possible_dbs as $dbname) {
+        echo "<hr><p>Testing database: <strong>$dbname</strong></p>";
         
-        // Test if users table exists
-        $result = $conn->query("SHOW TABLES LIKE 'users'");
-        if ($result->num_rows > 0) {
-            echo "<p style='color: green;'>✓ 'users' table exists</p>";
-            
-            // Count users
-            $count = $conn->query("SELECT COUNT(*) as total FROM users")->fetch_assoc();
-            echo "<p><strong>Total users:</strong> " . $count['total'] . "</p>";
+        $conn = new mysqli($host, $user, $pass, $dbname);
+        
+        if ($conn->connect_error) {
+            echo "<p style='color: red;'>✗ Failed: " . $conn->connect_error . "</p>";
         } else {
-            echo "<p style='color: red;'>✗ 'users' table not found</p>";
+            echo "<p style='color: green;'>✓ Connected successfully!</p>";
+            
+            // List all tables
+            $result = $conn->query("SHOW TABLES");
+            if ($result) {
+                echo "<p><strong>Tables found:</strong></p><ul>";
+                while ($row = $result->fetch_array()) {
+                    echo "<li>" . $row[0] . "</li>";
+                }
+                echo "</ul>";
+            }
+            
+            $conn->close();
+            break;
         }
     }
+    
 } else {
     echo "<p style='color: red;'>✗ config.php file not found</p>";
     echo "<p>Current directory: " . getcwd() . "</p>";
