@@ -1,0 +1,10 @@
+# Sensitive configuration files
+php/config.php
+
+# Local development
+.vs/
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
