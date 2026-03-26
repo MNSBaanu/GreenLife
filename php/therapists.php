@@ -48,7 +48,7 @@ if ($result) {
                     </div>
                 </div>
 
-                <a href="../html/login.php" class="login">Login</a>
+                <a href="login.php" class="login">Login</a>
             </nav>
         </div>
     </header>
