@@ -1,0 +1,21 @@
+# Enable error reporting for debugging (remove in production)
+php_flag display_errors on
+php_value error_reporting E_ALL
+
+# Set default index files
+DirectoryIndex index.php index.html
+
+# Enable URL rewriting
+RewriteEngine On
+
+# Prevent directory browsing
+Options -Indexes
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Allow access to necessary files
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
