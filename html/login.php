@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,7 +55,6 @@
     </div>
 
      <!-- Login Form -->
-    <?php session_start(); ?>
     <form id="login-form" class="auth-form active" action="../php/login.php" method="POST">
         <div class="form-group">
             <label for="login-email">Email</label>
