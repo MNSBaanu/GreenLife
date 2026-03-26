@@ -30,7 +30,7 @@ if (isset($_POST["email"], $_POST["password"])) {
             header("Location: admin_dashboard.php");
         } else {
             $_SESSION['login_error'] = "Unknown role.";
-            header("Location: ../html/login.html");
+            header("Location: ../html/login.php");
         }
         exit();
     } else {

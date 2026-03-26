@@ -33,7 +33,7 @@
                     </div>
                 </div>
 
-                <a href="../html/login.html" class="login">Login</a>
+                <a href="../html/login.php" class="login">Login</a>
             </nav>
         </div>
     </header>
@@ -54,6 +54,7 @@
     </div>
 
      <!-- Login Form -->
+    <?php session_start(); ?>
     <form id="login-form" class="auth-form active" action="../php/login.php" method="POST">
         <div class="form-group">
             <label for="login-email">Email</label>
@@ -120,7 +121,7 @@
         <button type="submit" class="btn-submit">Create Account</button>
         
         <div class="form-footer">
-            Already have an account? <a href="login.html" id="switch-to-login">Sign in</a>
+            Already have an account? <a href="login.php" id="switch-to-login">Sign in</a>
         </div>
     </form>
     </section>
