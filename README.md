@@ -95,43 +95,9 @@ GreenLife/
 
 2. Import the database (see [Database Setup](#database-setup))
 
-3. The database connection is configured automatically:
-   - Local development uses `localhost` with default credentials
-   - Production (InfinityFree) uses environment-specific credentials
-   - Configuration is handled in `php/config.php` (auto-generated on deployment)
+3. Configure the database connection in `php/config.php` with your local credentials.
 
 4. Point your web server document root to the project directory and open it in your browser.
-
-### Production Deployment (InfinityFree)
-
-This project uses GitHub Actions for automatic deployment to InfinityFree hosting.
-
-**Required GitHub Secrets:**
-
-Set these in your repository Settings → Secrets and variables → Actions:
-
-| Secret Name    | Description                          | Example Value                    |
-|----------------|--------------------------------------|----------------------------------|
-| `FTP_HOSTNAME` | InfinityFree FTP server              | `ftpupload.net`                  |
-| `FTP_USERNAME` | Your FTP username                    | `epiz_XXXXXXXX`                  |
-| `FTP_PASSWORD` | Your FTP password                    | `your_ftp_password`              |
-| `FTP_PORT`     | FTP port (usually 21)                | `21`                             |
-| `DB_HOST`      | MySQL hostname                       | `sql305.infinityfree.com`        |
-| `DB_USER`      | MySQL username                       | `if0_41483792`                   |
-| `DB_NAME`      | MySQL database name                  | `if0_41483792_greenlife_wellness`|
-| `DB_PASS`      | MySQL password                       | `your_db_password`               |
-
-**To Deploy:**
-
-Simply push to the `main` branch:
-```bash
-git push origin main
-```
-
-The GitHub Actions workflow will automatically:
-1. Create `config.php` with your database credentials
-2. Deploy all files to InfinityFree via FTP
-3. Your site will be live!
 
 ---
 
